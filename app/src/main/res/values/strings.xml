@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Télécommande EV3</string>
+    <string name="connection_bluetooth">Connection bluetooth</string>
+    <string name="nullText">Null</string>
+    <string name="mac_reseau">Adresse MAC robot</string>
+    <string name="title_activity_controle_panel">ControlePanelActivity</string>
+    <string name="controle_panel">Controle Panel</string>
+    <string name="left">←</string>
+    <string name="right">→</string>
+    <string name="forward">↑</string>
+    <string name="backward">↓</string>
+    <string name="up">➕</string>
+    <string name="down">➖</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="stop">STOP</string>
+    <string name="vitesse_robot">Vitesse robot</string>
+    <string name="direction_robot">Direction robot</string>
+    <string name="title_activity_control_panel">ControlPanel</string>
+    <string name="quitter">Quitter</string>
+    <string name="arret">Arrêt</string>
+    <string name="marche">Marche</string>
+
+</resources>
