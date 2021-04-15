@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity implements Joystick.Joystick
                 //Vérification de la conformité de l'adresse MAC saisie
                 if(pattern.matcher(MAC).matches()) {
                     blService.setMAC(MAC);
-                    //blService.setMAC("00:16:53:56:5F:C2");
+
+                    //blService.setMAC("00:16:53:80:46:E8");
                     success = blService.connectRobot();
                     if (success.equals("1")) {
                         Intent intent = new Intent(MainActivity.this, ControlePanel.class);

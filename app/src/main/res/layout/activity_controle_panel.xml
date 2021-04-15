@@ -97,6 +97,7 @@
         <Button
             android:id="@+id/stopButton"
             style="@style/Widget.App.ShapeableButton"
+            android:onClick="quitter"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -106,8 +107,7 @@
             app:fontFamily="@font/ubuntu"
             android:text="@string/quitter"
             android:textColor="@color/colorPrimary"
-            android:textSize="15sp"></Button>
-
+            android:textSize="15sp" />
 
         <!--<Button
         android:id="@+id/onButton"
@@ -120,6 +120,7 @@
         android:text="@string/marche"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />-->
+
     </LinearLayout>
 
     <!--<Button
