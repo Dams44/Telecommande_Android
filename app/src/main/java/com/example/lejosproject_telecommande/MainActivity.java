@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements Joystick.Joystick
                     //blService.setMAC("00:16:53:80:46:E8");
                     success = blService.connectRobot();
                     if (success.equals("1")) {
-                        Intent intent = new Intent(MainActivity.this, Automatic.class);
+                        Intent intent = new Intent(MainActivity.this, ControlePanel.class);
                         startActivity(intent);
                     } else {
                         //resultMAC.setText(success);
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements Joystick.Joystick
                     }
                 } else {
                     //resultMAC.setText("Adresse MAC incorrect");
-                    Toast.makeText(MainActivity.this,"error ",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"incorrect ",Toast.LENGTH_LONG).show();
 
                 }
                 editor.putString("bluetoothState", success);
