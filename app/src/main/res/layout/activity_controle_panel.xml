@@ -97,16 +97,17 @@
         <Button
             android:id="@+id/stopButton"
             style="@style/Widget.App.ShapeableButton"
+            android:onClick="quitter"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/colorBright"
             android:letterSpacing="0.02"
+            app:fontFamily="@font/ubuntu"
             android:text="@string/quitter"
             android:textColor="@color/colorPrimary"
-            android:textSize="15sp"
-            app:fontFamily="@font/ubuntu"></Button>
+            android:textSize="15sp"></Button>
 
 
         <!--<Button

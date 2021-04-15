@@ -25,19 +25,19 @@ public class ControlePanel extends AppCompatActivity implements Joystick.Joystic
 
     //Chaque méthode correspondent au onClick d'un des boutons de la vue télécommande
     //Elles appelent la méthode request qui permet d'envoyer une requête au robot
-    public void marche(View view){
+    /*public void marche(View view){
         request((byte) 0);
-    }
+    }*/
 
-    public void quitter(View view){
+    public void quitter (View view){
         request((byte) 9);
         bluetoothConnectionService.stopBluetooth();
         System.exit(0);
     }
 
-    public void arret(View view){
+    /*public void arret(View view){
         request((byte) 14);
-    }
+    }*/
 
     public void request(byte message) {
         this.bluetoothConnectionService.send(message);
