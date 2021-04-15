@@ -71,7 +71,6 @@ public class ControlePanelTest {
     @Test
     public void onJoystickMoved() {
 
-
     }
 
     @Test

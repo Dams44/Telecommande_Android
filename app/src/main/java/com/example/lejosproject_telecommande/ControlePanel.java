@@ -1,11 +1,13 @@
 package com.example.lejosproject_telecommande;
 
 import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
+//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.SurfaceView;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class ControlePanel extends AppCompatActivity implements Joystick.JoystickListener{
     //Variable globale

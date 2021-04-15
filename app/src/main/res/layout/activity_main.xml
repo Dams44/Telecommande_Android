@@ -1,45 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    tools:layout_editor_absoluteY="99dp">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_marginTop="200dp"
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/connectButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginLeft="104dp"
-        android:layout_marginTop="164dp"
-        android:text="@string/connection_bluetooth"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editMACRobot"
-        android:layout_width="241dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginLeft="29dp"
         android:layout_marginTop="50dp"
-        android:ems="10"
-        android:hint="@string/mac_reseau"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:targetApi="o" />
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Veuillez saisir l'adresse MAC du robot : "
+            android:textSize="25dp"
+            app:fontFamily="@font/ubuntu"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/editMACRobot"
+            android:inputType="textPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="23dp"
+            android:ems="10"
+            app:fontFamily="@font/ubuntu"
+            android:textColor="@color/colorPrimary"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/resultIP"
         android:layout_width="334dp"
         android:layout_height="32dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="248dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/connectButton"
+        style="@style/Widget.App.ShapeableButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorBright"
+        android:letterSpacing="0.02"
+        android:text="@string/connection_bluetooth"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:fontFamily="@font/ubuntu"></Button>
+
+
+</LinearLayout>
