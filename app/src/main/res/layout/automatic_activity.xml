@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/automatic"
-        android:layout_width="135dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="138dp"
-        android:layout_marginLeft="138dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginRight="138dp"
-        android:layout_marginBottom="111dp"
+        style="@style/Widget.App.ShapeableButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorBright"
+        android:letterSpacing="0.02"
         android:text="Automatic"
-        app:layout_constraintBottom_toTopOf="@+id/manuel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:fontFamily="@font/ubuntu" />
 
     <Button
         android:id="@+id/manuel"
-        android:layout_width="120dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="153dp"
-        android:layout_marginLeft="153dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginRight="138dp"
-        android:layout_marginBottom="234dp"
+        style="@style/Widget.App.ShapeableButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/colorBright"
+        android:letterSpacing="0.02"
         android:text="Manuel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:fontFamily="@font/ubuntu" />
+
+</LinearLayout>

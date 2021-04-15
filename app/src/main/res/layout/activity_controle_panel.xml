@@ -81,10 +81,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="385dp"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
-        android:layout_gravity="center"
         tools:ignore="MissingConstraints">
 
         <com.example.lejosproject_telecommande.Joystick
@@ -103,10 +103,10 @@
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/colorBright"
             android:letterSpacing="0.02"
-            app:fontFamily="@font/ubuntu"
             android:text="@string/quitter"
             android:textColor="@color/colorPrimary"
-            android:textSize="15sp"></Button>
+            android:textSize="15sp"
+            app:fontFamily="@font/ubuntu"></Button>
 
 
         <!--<Button
