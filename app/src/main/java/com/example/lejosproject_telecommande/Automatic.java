@@ -51,7 +51,7 @@ public class Automatic  extends AppCompatActivity {
         @Override
         public void onClick(View view) {
 
-            request((byte)99);
+            request((byte)84);
             SystemClock.sleep(100);
 
         }

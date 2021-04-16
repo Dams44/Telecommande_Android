@@ -35,6 +35,10 @@ public class ControlePanel extends AppCompatActivity implements Joystick.Joystic
         System.exit(0);
     }
 
+    public void connectPortail (View view){
+        request((byte) 99);
+    }
+
     /*public void arret(View view){
         request((byte) 14);
     }*/
