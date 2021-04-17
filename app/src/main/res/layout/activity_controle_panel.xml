@@ -82,9 +82,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
-        android:layout_gravity="center"
         tools:ignore="MissingConstraints">
 
         <com.example.lejosproject_telecommande.Joystick
@@ -107,7 +107,24 @@
             app:fontFamily="@font/ubuntu"
             android:text="@string/quitter"
             android:textColor="@color/colorPrimary"
-            android:textSize="15sp" />
+            android:textSize="15sp"></Button>
+
+        <Button
+            android:id="@+id/connectPortail"
+            style="@style/Widget.App.ShapeableButton"
+            android:onClick="connectPortail"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/colorBright"
+            android:letterSpacing="0.02"
+            app:fontFamily="@font/ubuntu"
+            android:text="@string/portail"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"></Button>
+
+
 
         <!--<Button
         android:id="@+id/onButton"
@@ -120,7 +137,6 @@
         android:text="@string/marche"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />-->
-
     </LinearLayout>
 
     <!--<Button

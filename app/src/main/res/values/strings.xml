@@ -20,5 +20,6 @@
     <string name="quitter">Quitter</string>
     <string name="arret">Arrêt</string>
     <string name="marche">Marche</string>
+    <string name="portail">Connexion Portail</string>
 
 </resources>
